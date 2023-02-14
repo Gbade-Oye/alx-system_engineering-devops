@@ -1,1 +1,2 @@
-for i in {a..z}{a..z}; do [[ $i != oo ]] && echo $i; done
+#!/bin/bash
+seq -f '%g %g' 1 26 | tr ' ' '\n' | grep -v '15$' | sed 's/\([0-9]\+\) \([0-9]\+\)/\1-\2/' | tr '\n' ' '

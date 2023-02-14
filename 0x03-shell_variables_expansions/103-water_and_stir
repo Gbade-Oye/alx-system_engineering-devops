@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n 'p;n' $1
+echo "obase=13;ibase=5;${water}+${stir}" | bc | tr '0123456789ABC' 'gtaio luSnemf'
